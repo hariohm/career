@@ -1,0 +1,719 @@
+Reverse Engineering, Malware analysis tools, Exploit methodologies
+Knowledge on any of two database technologies like Oracle, MSSQL, mysql,IBM Db2, PostgreSQL,MariaDB, SYBASE, SAP HANA, mongoDB.
+Strong understanding of database security for various RDBMS and NOSQL databases.
+Experience with security alert correlation across different platforms.
+Good knowledge of Windows and/or Linux systems.
+Familiarity with CSOC operations and incident response procedures.
+ Vulnerability Management – maintain regular scans, interpret results, identify asset owners, track remediation activities and report on the agreed SLAs.
+ Security Controls Administration – maintain availability and functionality of all security controls; implement new and advanced features where available; write technical documentation and manage changes.
+ SIEM Maintenance & Content – maintain availability of the underlying infrastructure, develop new alerts, field parsers, models and automated playbooks, and integrate new log sources where appropriate.
+ Threat Intelligence & Threat Hunting – provide, develop and integrate external threat intelligence data into the team’s detection capabilities; perform proactive threat hunts based on working hypotheses, and implement subsequent SIEM alerts where required.
+ Purple Team & Scenario Exercises – regularly test the team’s detection capabilities, develop scenario based training, and organise purple team exercises, both in house and with third party providers.
+ Insider Threat – maintain and develop the Data Loss Prevention policies in line with the company’s data classification requirements, and implement exceptions for business approved procedures where required. Improve the detection and response capabilities of the remaining security controls with a focus on insider threat.
+1-2 years experience in Azure Cyber Security incident investigations including KQL and SQL based reporting. 
+Provide analysis and investigation of security related data from a wide range of security devices and customer environments
+Will actively participate in researching trends and current countermeasures for cyber security vulnerabilities, exploits, and other malicious activity
+Provide Incident Response (IR) support as needed
+Provide analysis based on threat and vulnerability reports
+Analyze and respond to previously undisclosed software and hardware vulnerabilities
+Interpreting and acting on results from various security technologies including SIEM, IDS/IPS, Endpoint Solutions, DLP, etc. through ReliaQuest’s proprietary security operations platform, GreyMatter
+Responsible for working in a fast paced, customer-facing environment
+Bachelor's degree in a related field is highly preferrable
+1-3 years' experience as a Security/Network Administrator or equivalent knowledge
+Knowledge of various security methodologies and processes, and technical security solutions (SIEM, IDS/IPS, Firewall Solutions, Offensive Security tools)
+Knowledge of TCP/IP Protocols, network analysis, and network/security applications
+Knowledge of common Internet protocols and applications
+Understanding of security best practices and how to implement them at a business-wide level;
+Experience with managing, configuring, and deploying enterprise-grade security solutions in some of the following:
+SIEM
+Privileged Access Management/Identity Access
+Endpoint Detection & Response
+Cloud based architecture such as Azure/AWS
+Active Directory
+Exceptional communication skills; and
+Fundamental scripting skills, such as PowerShell/Python.
+Understanding of security best practices and how to implement them at a business-wide level;
+Experience with managing, configuring, and deploying enterprise-grade security solutions in some of the following:
+SIEM
+Privileged Access Management/Identity Access
+Endpoint Detection & Response
+Cloud based architecture such as Azure/AWS
+Active Directory
+Exceptional communication skills; and
+Fundamental scripting skills, such as PowerShell/Python.
+In-depth security research experience with excellent writing and critical thinking skills.
+Functional understanding of common threat analysis models such as the Diamond Model, Cyber Kill Chain, and MITRE ATT&CK.
+Experience in Information Security, Threat Intelligence tools, and Management platforms.
+Strong knowledge of attack vectors and tactics, techniques, and procedures (TTP) employed by cyber threat actors.
+2+ years of relevant experience
+A solid foundation in networking fundamentals, with a deep understanding of TCP/IP and other core protocols
+Experience in enterprise intrusion analysis, SIEM, and incident response
+The ability to analyze logs from various security devices and web servers
+Familiarity with network architecture and security infrastructure placement
+Understanding of Windows and Unix operating systems, and command line tools
+Knowledge of attack vectors, threat tactics, kill chain, and attacker techniques is a plus
+Experience with Cloud Incident Response is a plus (e.g., AWS, Azure)
+Interpersonal skills sufficient to work with both technical and non-technical personnel at various levels in the organization
+Ability to elicit and communicate technical and non-technical information clearly and concisely
+An open mind, willingness to be challenged, and strong desire to learn
+Should be flexible to work during different shifts and possibly weekend
+
+mongodb
+Leveraging automation workflows, and enriching discoveries and detections
+Assist with Incident Response and Investigation across different environments and platforms
+Utilizing analysis frameworks (ie; MITRE) to better understand gaps, and working towards closing those gaps 
+Maintain, improve, and configure Information Security Operations tooling and alerts
+Leverage threat intelligence for enrichment
+Develop well written documentation and playbooks
+Work cross functionally with multiple teams deploying tooling, establishing new processes, or improving existing processes
+Ability to quickly learn new Information Security concepts and adapt to a modern, fast-paced organization
+Help mentor and train others on the team
+Participate in weekly on-call rotations
+Experience in security operations and incident response disciplines
+Experience detection/incident tooling or workflow optimization
+Some experience working within cloud platforms, particularly AWS
+Experience working & maintaining with SIEM; developing queries & alerts
+Some Experience performing smaller investigations, analysis and communicating the events or incidents to proper stakeholders clearly
+Experience deploying tooling to advance investigation tactics and incident response across different environments ie; corporate environments and cloud environments 
+An understanding of Windows & MacOS, Linux is nice to have
+An understanding of various threats and how to investigate, detect and prevent them
+Love to learn; you are motivated to learn about security and tinkering
+Utilizing this knowledge in SecOps, or creatively using it in a response effort
+Experience interfacing with technical and non-technical individuals. Ability to adjust the level of technicality depending on the group
+GIAC, CEH, GSOC certificates
+
+
+Responsible for working in a 24x7 Security Operation Center (SOC) environment.
+Participate in security incident response efforts, having knowledge of common security exploits, vulnerabilities and countermeasures.
+Digital forensics and malware analysis
+Coordinate with Security System engineers and Threat Intel engineers to continuously improve the accuracy and efficiency of the Security monitoring and response process.
+Investigate, document, and report on information security issues and emerging trends that affect Temenos on-premises and Cloud based platforms.
+Correlate incident data to identify specific vulnerabilities and make recommendations that enable expeditious remediation.
+Technical expert and liaison to law enforcement and executive personnel and explain incident details as required.
+Write and publish cyber defense techniques, guidance, incident findings, and after-action reviews to constituents
+Propagates a risk based, business focused cyber security approach in all activities.
+Deliver regular and consistent KPI/KRIs on the security monitoring activities.
+Remain current on security industry events, threats and impacts on new technology.
+
+2+ years of working experience in Security Incident Response.
+Security Operation Centers Experience.
+Strong knowledge of networking topologies and technologies, including firewalling, routing and switching, web traffic
+Strong knowledge of Operating Systems (Windows, Linux, UNIX)
+Solid understanding of current cyber-attack tactics/techniques and mitigation solutions. 
+Experience with network and host-based intrusion detection and prevention systems
+Knowledge on one or more SIEM tools, such as Splunk, Sentinel.
+Previous experience in creating heuristic detections, correlation searches in SIEM tools (QRadar, Arcsight, Sentinel, Splunk, etc)
+Strong analytical skills.
+Security Incident Response knowledge
+Exposure to handling Security Centre alerts in cloud (Azure or AWS).
+Ability to communicate security issues to peers and management. 
+Customer-oriented with a strong interest in client satisfaction.
+Industry certifications & qualifications from recognized training providers – ISC2, ISACA, SANS, EC-Council can be a plus.
+ 
+Knowledge of some of the following systems:
+Centralized Log Management, SIEM or Security Orchestration, Automation, and Response (SOAR)
+Email protection and fraud defense systems
+Identity Services Applications for password protection
+Web and Network protection and monitoring tools
+Cloud Productivity Environment maintenance and protection
+Knowledge of and protection for PCs and Servers
+Working knowledge of securing Linux servers and knowledge of Linux-based security scanning and monitoring tools. 
+A certificate relevant for a security analyst
+
+What will you do?
+
+Engage in diverse responsibilities within the SentinelOne SOC, encompassing continuous monitoring and analysis, threat hunting, security compliance, security event auditing and analysis, rule development and tuning, forensics, and incident response
+Provide support throughout all stages of the incident response life cycle: 1) Preparation, 2) Detection and Analysis, 3) Containment, Eradication and Recovery, and 4) Post-Event Activity
+Identify areas for improvement and automation within the SOC and spearhead initiatives to implement your ideas
+Recognize and propose solutions for gaps in current capabilities, visibility, and security posture
+Correlate information from disparate sources to develop innovative detection methods
+
+What skills and knowledge you should bring?
+
+2+ years of experience
+Educational background in cybersecurity, information technology, or related fields; relevant certifications are a plus but not required
+Basic familiarity with security frameworks and threat models like MITRE ATT&CK and Cyber Kill Chain
+Hands-on experience with log and event analysis, including the ability to filter, organize, and interpret data from SIEMs or log aggregation tools
+Fundamental understanding of the incident response process, with a willingness to learn the phases of detection, containment, and recovery
+Working knowledge of common operating systems (Windows, Linux, macOS) and basic command-line skills (PowerShell, Bash)
+Basic understanding of networking fundamentals (e.g., IP addressing, DNS, VPNs, firewalls, ports) and security concepts (e.g., confidentiality, integrity, and availability)
+Exposure to common security tools, such as EDR solutions
+Demonstrated ability to think critically and solve problems under guidance, with a strong interest in learning to detect and investigate security incidents
+Basic familiarity with cloud environments and related security controls (such as AWS, GCP, Azure)
+Commitment to continuous learning and the ability to adapt to new technologies, threats, and processes
+Ability to work flexible hours to support 24/7 SOC operations and Hybrid work mode (Bangalore Location must)
+Clear, concise communication skills, especially for documenting security events and reporting findings to team members and managers
+
+ Bachelor’s degree or equivalent experience in Information Systems Management, Information Technology, Computer Science, Business, Management, Engineering, or another related discipline
+ Relevant Cloud Certifications from Azure and/or AWS OR Bachelor's degree in Computer Science, Information Technology, Cybersecurity, or a related field
+ Basic understanding of cybersecurity principles and practices
+ Familiarity with cloud platforms (Azure, AWS preferred)
+ Knowledge of security tools and technologies (SIEM, CSPM)
+ Basic scripting and automation skills (Python or PowerShell preferred)
+ Strong problem-solving and analytical abilities
+ Ability to analyze and interpret security data and logs
+ Problem-Solving: Applying general problem-solving techniques in security contexts.
+ Documentation: Competence in creating and maintaining security documentation.
+ Communication: Basic communication skills for interacting with team members.
+ Training Support: Assisting in security training delivery under guidance.
+
+Responsibilities:
+Assist in monitoring network and systems for security breaches or intrusions.
+Support in conducting preliminary security assessments and audits.
+Participate in the implementation of IS and cyber security standards and procedures..
+Provide support in the evaluation of information security tools and products.
+Contribute to the success of application modernization projects by supporting multiple customers with environment support and monitoring of the cloud environments (e.g. AWS, GCP) and their systems
+
+Provide support regarding cloud security and the implementation of infrastructure to support the modernization of systems
+Responsible for developing and recommending best course of action based on solid security principles
+Responsible for assisting in the development of vulnerability and threat related communications for potential dissemination to warn WK employees of an emerging situation
+Operational Readiness Review (ORR) - Review ORR Open Office Hours chats and Jira tickets for GIS checks following up with the appropriate owner to take direction or escalate
+Cross Training & Peer Review –
+Partner with each team lead as mentors
+Continual KT sessions with peers
+Learn Container Security, working to become SME
+Learn KPI and Reporting, working to become SME
+Learn CSPM program, working with CSPM lead
+Learn SIEM program, working with SIEM lead
+Automation Development –
+Support automation developers taking direction, document processes
+Work with automation developers to improve UX and capabilities of GIS programs
+Support opportunities to displace or streamline workflows
+Participate in Team Scrums –
+Create tasks as user stories
+Keep your tasks up to date
+Documentation and reporting support for Jira
+Technical Writing & Documentation for Team Review
+Help draft Standard Operating Procedures Internal and External for each workstream team maintains
+work with Control Owners and CSAE team to draft content
+Help draft documentation for integrations with tooling from Orca & Sentinel
+Help draft ORR documentation updates for ORR Portal
+Help draft Audit documentation for tooling and programs
+Automate KPI Reporting
+Help support and create KPI reporting to feed PowerBI
+Update KPI decks with Power BI charts"
+
+Tool Support & Maintenance
+Investigate CSPM Tooling's capabilities and understand our use
+Provide Support and Administration for user access
+Support requests for audit evidence (Tool Configurations ONLY)
+Create and Deliver on Ad-Hoc reporting requests from end users
+Document and support tool Integrations with tooling working with team leads
+Support Subject Matter Experts; taking direction from Team Leads
+Minimum Standard Baseline (MSB)
+Help maintain MSB master sheet and documentation with SCM task force (includes supporting annual reviews)
+Help keep measures in tool up to date
+Shift-Left MSB
+Help maintain build level policy master sheet and documentation with SCM task force (includes supporting annual reviews)
+Help keep policies in sync from all sources
+
+SIEM Support & Maintenance
+Investigate SIEM Tool's capabilities and understand our use
+Support requests for audit evidence (Tool Configurations ONLY)
+Create and Deliver on Ad-Hoc reporting requests from users (querying tables, providing traffic checks)
+Document and support data connectors used in SIEM working with team leads
+Support Subject Matter Experts; taking direction from Team Leads
+
+Skills and Experience:
+SCRUM, Jira, Confluence
+Knowledge of SPLUNK, Cortex XDR, SOAR Automation
+Basic AWS Security, CNAP
+Knowledge of Proofpoint, McAfee
+Knowledge of Threat Intel
+Knowledge of Tenable Nessus, SkyHigh, Zscaler, Palo Alto
+Reporting & ReviewPublic/Private Key Certificate Infrastructure
+Windows, Linux, MAC
+Encryption methodologies
+Experience in cloud architecture and security aspects
+
+What You Will Be Doing
+
+Develop policy and standards for API security
+ Collaborate with internal development teams to build/advocate security controls in Application Programming Interface (API), performing Threat Modeling, Static Application Security Testing (SAST), Software Composition Analysis(SCA). 
+ Assist in the strategy, standards, and architecture for the security aspects of the SDLC including application, APIs, DevSecOps, and CICD. 
+ Identify the gaps in SAST/SCA tool rule/configuration and work with vendor to engineer them to provide the maximum scanning coverage to applications. 
+Experience and knowledge in Burp Suite tool for dynamic testing (DAST)
+Primarily responsible for API application security but with a good working knowledge of other security domains (Cryptography, Identity and Access Management, Threat and Vulnerability Management)
+
+What You Bring
+
+At least 5 years of working experience in application security that includes API, SAST and DAST along with Checkmarx, Veracode
+Knowledge of security technologies (encryption, data protection, design, privilege access, etc.)
+Proficiency in time management, communications, decision making, presentation and organizational skills
+Proficiency in planning, reporting, establishing goals and objectives, standards, priorities and schedules
+Excellent decision-making, analytical and problem solving skills
+Excellent verbal and written communication skills to technical and non-technical audiences of various levels in the organization
+Experience establishing and maintaining effective working relationships with employees and/or clients
+Strong knowledge of development and application security
+Hands-on experience performing application API security assessment, static and dynamic security assessments with tools such as~ Burpsuite, OWASP ZAP, AppScan, WebInspect, Fortify, Veracode, Checkmarx, etc
+Knowledge of OWASP Top 10/ SANS Top 25, identify vulnerabilities via manual and automated testing methods and how to effectively remediate vulnerabilities associated with each
+Expert knowledge of information security principles, web applications, and intermediate familiarity with malicious code and common hacking techniques used by malicious actors
+Experience conducting risk assessments and performing threat modeling of applications
+Ability to collaborate with teams remotely
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
