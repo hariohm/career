@@ -270,20 +270,77 @@ Event ID -Title
 4658 — The handle to an object was closed
 4660 — An object was deleted
 4663 — An attempt was made to access an object
+Log Tampering and Integrity Monitoring
+Description: Include how attackers can attempt to manipulate or delete event logs to hide malicious activities and the importance of log integrity monitoring.
+Importance: Tampered logs could compromise an investigation. Tools like Sysmon and File Integrity Monitoring (FIM) systems are often used to detect changes.
+Scheduled Task and Service Monitoring
+Description: Include monitoring scheduled tasks (Event ID 4697) and services for persistence mechanisms attackers use to maintain access.
+Importance: Task Scheduler abuse is a common persistence technique, and monitoring these logs can detect such activities.
 
+How a Proxy Helps:
+Centralized Web Traffic Control: It inspects, filters, and logs all outgoing web requests from all machines.
+Block Malicious Domains: Proxies can block requests to known malicious domains using threat intelligence feeds.
+Generate Alerts: When traffic is detected to known or suspected malicious IPs or URLs, alerts can be sent to security teams.
+Logging: Proxies log all web activity, allowing for retrospective analysis if an incident is reported (e.g., after a fake pop-up or malicious download).
 
+A Next-Generation Firewall (NGFW) with Deep Packet Inspection (DPI) capabilities can help inspect outbound traffic from all machines and block or flag suspicious connections.
 
+How a Firewall Helps:
+Outbound Traffic Filtering: NGFWs can filter outgoing traffic and identify abnormal patterns, like connections to suspicious IP addresses or unusual ports.
+DPI for Malware Detection: The firewall inspects outbound traffic for malicious content in real time, including downloads and file transfers.
+Application Awareness: Modern firewalls can detect which application or process is making a request (e.g., Firefox vs. an unknown downloader).
+Block Suspicious Domains/IPs: Firewalls can block outgoing traffic to known malicious domains using a constantly updated threat intelligence database
+The Discretionary Access Control List (DACL) — in charge of allowing/denying access
+The System Access Control List (SACL) — which for the most part is used for auditing when attempts of access are made to the target object.
 
+The Security Account Manager (SAM) is a particular registry hive that stores credentials and account information for local users. User passwords are stored in a hashed format in the SAM registry hive either as an LM hash or an NT hash, depending on Group Policy settings.
 
+Files within the System32 directory can potentially be involved in security events, especially if malicious scripts or binaries are executed, which might manipulate system processes.
 
+How the System32 folder might be relevant to logging or monitoring:
+Executable Files:
 
+The System32 folder contains a variety of system executables, services, and dynamic link libraries (DLLs). These files can be launched during normal operation or by an attacker if compromised. Monitoring the execution of files in System32 can help detect malicious activities, like LOLBAS (Living off the Land Binaries and Scripts) or other techniques that misuse legitimate system binaries for malicious purposes.
+Event Logs Related to Files in System32:
 
+While the System32 folder doesn’t generate logs directly, activity involving files within System32 can trigger Windows Event Logs, such as:
+Event ID 4688 (A new process has been created) – Logs when a process is executed, which includes any executable within System32.
+Event ID 4689 (A process has exited) – Logs when a process running from System32 terminates.
+File Access Logs (Audit Policy):
 
+You can enable Audit Object Access on files within System32 to track access to specific files. This requires configuring Object Access Auditing through Group Policy or Local Security Policy.
+Malware and Process Injection:
 
+Malicious software may attempt to inject itself into or replace legitimate System32 binaries for persistence. Monitoring for unusual processes running from this directory, or changes to system files in System32, can help detect fileless malware or rootkits.
 
+NT Hash (NTLM Hash)
+The NT (New Technology) or NTLM Hash is a more secure hashing mechanism used in Windows NT and later versions, including modern systems.
 
+It is based on the MD4 hashing algorithm and supports passwords of virtually unlimited length and mixed case.
 
+Unlike LM Hash, the NTLM Hash does not convert passwords to uppercase and is significantly harder to crack, although still not considered fully secure against modern, resource-intensive attacks.
 
+Structure of NT Hash:
+
+The password is processed using the MD4 hashing algorithm, producing a 128-bit hash value.
+NTLM Authentication:
+
+NTLM (NT LAN Manager) is a Microsoft security protocol suite that uses the NT Hash for user authentication.
+NTLM has two versions: NTLMv1 (older, less secure) and NTLMv2 (more secure and widely used in modern systems).
+
+============================================ LOLBAS Rules ==================================================
+The rules in this section detect suspicious behavior related to operating system binaries.
+
+Unusual child processes and DLL loads
+Detect starts from non-default locations
+Detect proxy execution
+Detect UAC bypass
+Detect csc/jsc compile
+Detect execute from alternate data streams
+Detect AWL bypass
+Detect encode and decode operations
+Detect copy operations
+Detect download operations
 
 
 
