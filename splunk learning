@@ -1,0 +1,534 @@
+Splunk is a software technology for monitoring, searching, analyzing, and visualizing machine-generated data in real-time. 
+This tool can monitor and read several types of log files and store data as events in indexers. 
+It uses dashboards to visualize data in various forms.
+splunk fundamentals 1 > splunk core certified user > splunk fundamentals 2 > spunk core certified power user
+
+splunk architecture
+input data > parser > indexing >  rawdata/disk > searching
+
+search processing language
+| = the pipe operator 
+in this the command to the left of the first is first executed and then the output is the input to the command in the right > index = "test" | stats count
+Field names in Splunk are case sensitive, but the field values are case insensitive.
+index Test [ search index="Test" to="deep@gmail.com" | transaction sid ] here sid is case sensitive and remaining are not case sensitive
+There are two major types of time modifiers: relative search and real-time search.
+A relative search captures data that appears in a given amount of time, such as yesterday.
+The search refreshes when the relative time boundary has passed. 
+So a search for yesterday refreshes (and is, therefore, relative to) each new day.
+A real-time search refreshes in real time; thus, it continually pushes old data and acquires new data, depending on the boundaries.
+splunk has 5 basic search components
+search term define the data you want to retrieve from Splunk index = “Test” 58840
+commands define what to do with the retrieved results of a search. index=“Test” |tail 20
+functions define how to chart your results. index=“_internal”|stats avg(bytes) 
+arguments are the variables that you usually apply to functions to retrieve results. index=“Test”|eventstats sum(count) as total_count processing command applies the count’s summation function as the total count.
+clauses let you group results and rename field results. F
+Boolean Operators AND, OR, and NOT. They always need to be capitalized.
+syntax colouring in splunk
+boolean operator orange
+commands blue
+argument green
+functions purple
+filtering commands where dedup like  head tail
+where command evaluates spl to filter the results
+dedup command removes all the duplicates that falls with in the same criteria
+|dedup field1 dedup checks the field value for any other event with the same value  if so it removes it 
+|dedup count field1  dedup checks field1 value for any other event with the same value; if so, it removes the values. The dedup count determines the field1 count.
+head command retrieves initial count events. Count is a parameter that stops retrieving results based on several counts provided to the head command; for example, head 5 retrieves the first five events.
+tail command retrieve the last count events
+
+reporting  commands  in spl prepare a summary that is usefull for reporting. these commands include the top, rare history stats, untable  timechart , chart, table
+top command retrieves initial count events. Count is a parameter that stops retrieving results based on several counts provided to the head command; for example, head 5 retrieves the first five events.
+The top command finds the top (most common) value of all field values and retrieves the field1 table, a total count, and percentage.
+The top command finds the top (most common) value of the field and then retrieves the count and creates a field1 table, a total count, and percentage.
+By default, the output of the top command is in table format.
+rare  The rare command is the opposite of the top command because it shows the total number of times the rare values appear in the field and their percentage of the results.
+history command in the spl is used to view the current users search history 
+table command in the spl generates a table on all field names that u want to include in your report |table field1 field2
+stats The stats command calculates aggregate statistics, such as the average, count, and sum of the results. It is like SQL aggregation.
+
+Aggregate functions summarize the values of each event to create a single meaningful value
+
+|stats avg(field) this function return avg number of events for a field
+|stats count(field) returns a count of events for a field 
+|distinct count  returns  distinct value of a field
+|max , 
+|median  returns middle most value of a field
+|min
+|mode
+|sum  function returns the sum of the field
+
+event order functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
