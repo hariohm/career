@@ -341,14 +341,57 @@ Detect AWL bypass
 Detect encode and decode operations
 Detect copy operations
 Detect download operations
+=======================================================================================================================================
+OS Credential Dumping- LSASS Memory vs Windows Logs
+Credential dumping is the process of obtaining account login and password information,
+normally in the form of a hash or a clear text password, from the operating system and software. 
+Credentials can then be used to perform Lateral Movement and access restricted information.
+we have the rule to detect it with lsass memory. But still, we are missing more peculiar rules which may evade AV/EDR. 
+Those are the techniques listed below:
 
+Suspicious Access to LSASS Memory (Credential Dumping)
+Attackers often attempt to dump the contents of LSASS memory to extract credentials. Tools like Mimikatz, ProcDump, and Task Manager may be used to access LSASS memory.
 
+Memory access monitoring: EDRs detect when a non-privileged or suspicious process tries to access the memory of LSASS. This is abnormal behavior and triggers alerts. Some EDRs prevent access to LSASS memory unless specifically allowed (e.g., legitimate debugging).
 
+API call monitoring: EDRs can detect the use of functions such as MiniDumpWriteDump (used to create process dumps) or ReadProcessMemory, which are commonly employed in credential dumping attacks.
 
+Process injection: EDRs detect attempts to inject code into LSASS or other processes to perform credential theft.
 
+Command-line activity: EDRs track tools like ProcDump, Task Manager, or rundll32 being used with suspicious command-line arguments that indicate LSASS memory dumping.
 
+MITRE ATT&CK mapping: Many EDRs map these actions to techniques such as T1003: Credential Dumping from the MITRE ATT&CK framework.
 
+b. Anomalous LSASS Behavior
+Process spawning: EDRs flag suspicious processes that spawn from or interact with LSASS. For example, if cmd.exe or powershell.exe attempts to access LSASS or create dumps, this could trigger an alert.
 
+Code execution alerts: When tools or malware attempt to execute code in LSASS, EDRs use behavioral analysis to detect and block such operations.
+
+c. Known Malware Detection
+EDRs often include threat intelligence feeds that help identify known malware and toolkits used to dump LSASS, such as Mimikatz or specific process dumping utilities. These are flagged based on signatures, heuristics, or behavior analysis.
+
+Windows Event Logs (Security and Sysmon)
+Windows generates security-related event logs that are collected and analyzed by SIEMs. Some key event logs related to LSASS attacks include:
+
+Event ID 4624 (Successful logon): LSASS is involved in logon events. SIEM can detect patterns where multiple failed login attempts (Event ID 4625) are followed by a successful login, indicating a possible brute-force or credential stuffing attack.
+
+Event ID 4673 (Sensitive privilege use): This logs when privileged processes (like LSASS) attempt to perform tasks. SIEM systems can detect suspicious use of sensitive privileges and alert on unusual access to LSASS or its memory.
+
+Event ID 4656 (Handle to an object requested): This event is logged when a process requests access to another process or object. SIEMs can detect unauthorized attempts to access LSASS memory.
+
+Sysmon Event ID 10 (Process access): This event logs when one process opens another for reading or execution. SIEMs can monitor for processes attempting to open LSASS for memory reading.
+
+EDR Rule:
+Rule Name: Detect LSASS Memory Access (Credential Dumping)
+Logic: Alert when MiniDumpWriteDump or ReadProcessMemory API calls are used to access the memory of lsass.exe by unauthorized processes or tools like procdump.exe or mimikatz.exe.
+SIEM Rule:
+Rule Name: Detect LSASS Process Dumping Attempts
+Logic: Trigger an alert if:
+Sysmon Event ID 10 (Process access) shows a non-system process accessing LSASS.
+Event ID 4688 (Process creation) logs the execution of known dumping tools (e.g., procdump.exe, mimikatz.exe) targeting lsass.exe.
+Event ID 4656 (Handle request) logs unauthorized access to LSASS.
+
+Need to have a detection rule with parent process name as “COMSVCS.DLL” and loading process should be “runDLL32” with a condition of loading process NOT EQUAL TO “COMSVCS.DLL” along with the Sysmon Event ID 7.
 
 
 
