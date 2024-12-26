@@ -251,15 +251,94 @@ Expert knowledge of information security principles, web applications, and inter
 Experience conducting risk assessments and performing threat modeling of applications
 Ability to collaborate with teams remotely
 
+Extensive experience working in a SOC environment or handling incidents and breaches.
+Experience with Palo Alto firewalls, intrusion detection systems, intrusion prevention systems, anti-virus software, data encryption, and other industry-standard techniques and practices.
+Working technical knowledge of network, PC, and platform operating systems
+Strong understanding of networking, including network traffic analysis.
+Familiarity with switches, routers, and Firewalls.
+Experience with current systems software, protocols, and standards.
+Experience in E-Discovery, including content searches and relevant procedures and practices.
+Strong understanding of applicable practices and laws relating to data privacy and protection.
 
 
+5+ years in a Security Operations role with comprehensive experience in investigations and incident response.
+ Experience working within a Security Operations Centre.
+ Knowledge in using and configuring the Elastic stack (Elastic Search, Logstash, Kibana) to drive SOC operations (or equivalent SOC tech stack)
+ One or more of the following certifications are highly desired: CompTIA Security+, PentTest+, EC-Council (CEH, ECIH, CHFI, CND), Cisco CyberOps, GIAC (GCED, GCIA, GCIH), ISC2 (CISSP, CSSP) or similar security certifications.
+ Detailed understanding of threats, vulnerabilities, exploits, defences, security principles and policies.
+ Knowledge of techniques attackers use to identify vulnerabilities, gain unauthorised access, escalate privileges and access restricted information. 
+ Experience analyzing event and system logs, performing packet and forensic analysis in support of intrusion analysis or enterprise-level information security operations.
+ Knowledge of security practices and essential security technologies (AV, EDR, FIM, HIPS, NIPS, SIEM, WAF/DAM, DLP, IDS/IPS). 
+ Knowledge of information security protection/detection and authentication systems (firewalls, IDS, IPS, anti-virus, AD, AAD, RADIUS etc.).
+ Knowledge of Unix, Linux and Windows administration, patch deployment and system configuration and security controls.
+ Knowledge of communication protocols (HTTP, DNS, TCP/UDP) as well as the various techniques utilized by malware within an operating system for persistence and data collection.
+ Practical experience with scripting languages (e.g., Python, Perl, Bash, PowerShell).
+ Understanding of database systems, application system development and installation/implementation processes.
+ Practical experience performing vulnerability scans, risk assessments and security assessments.
+ Practical experience in the use of Tenable vulnerability assessment tool is highly desirable.
+ Understanding of virtualization technologies (e.g. VMware) and cloud environments (e.g. Azure, AWS)
+ Strong foundation in security domains such as web security, cloud services security, identity/access management, web application firewalls, intrusion detection, and static/dynamic application security testing.
+ Experience in designing, implementing, and managing solutions to complex security and infrastructure environments.
+
+At least five years’ experience in IT systems administration/engineering, network administration/engineering, and/or DevOps
+At least two years’ experience in information security, including but not limited to incident response, vulnerability assessment, and alerting/monitoring
+Strong understanding of cloud technologies up and down the stack
+Strong understanding of Windows and *nix systems as well as network architecture and protocols, including TCP/IP, DNS, and HTTPS. 
+Experience with anti-malware/XDR/advanced threat detection (Windows Defender, CrowdStrike Falcon, SentinelOne), network monitoring (Zscaler, Palo
+Alto Networks, Cisco Meraki, Suricata
+, Bro), identity service providers (Microsoft Entra ID), and log analysis tools (Splunk, Microsoft Sentinel, Graylog, ELK)
+Ability to troubleshoot
+Ability to communicate proficiently with technical and non-technical people around the world
+Become SANS GIAC certified within six months or hold a current and valid certification in any of the following: (ISC)2: CISSP, CCSP, SSCP, CAP; SANS GIAC: GCIH, GREM, GCIA, GCFA, GCFE, GPEN, GCED; CompTIA: Security+; EC Council: CEH; other IT certifications considered. 
 
 
+Experience using Splunk
+Experience building solutions in Python, PowerShell, zsh, and bash
+Bachelors' degree in Computer Science, Electrical/Computer Engineering, Information Security, Management Information Systems, or equivalent experience
 
 
+Key Responsibilities
 
+Minimum 5 Plus years of experience in cyber security incident response Guiding L1 on Incident Management/investigation. 
+Ability to monitor and analyze Sentinel SIEM, MS Defender endpoint, network (Firewall, PS ), and application logs
+Enhancement to SOC procedures and operation
+SOC Optimization (Analytical Rules, automation, reports, etc.)
+Runbooks improvements
+Creation of SOP documents/KB articles
+QA on analyst incident reporting
+Checking & reviewing L1 Incidents in Sentinel & SNOW.
+Verify comments added to the incident (s) & provide constructive feedback.
+Guide/mentor analyst on process improvements
+Handling escalated incidents
+Perform actions to contain and remediate security incidents
+In-depth threat analysis on incident(s)
+Handling & reviewing VIP/critical/P1 incidents
+Day-to-day operation management
+Lead shift hand over calls
+Integrating new tools in SOC
+Review & Work on the incidents which are escalated by L1 & take actions like Isolate device, soft delete email, Block URL, Block Sender email address etc 
+Lead other functions (Vulnerability Management, Threat Intel,etc.) of SOC
+Run Vulnerability Scan, review the Scan report and walk through the report to the customer.
+Drive Client calls and projects with excellent communication skills
+Serving as POC for clients
+Lead client requirements to collaborate with internal teams
+Attend weekly meetings with clients and provide progress updates.
+Advising on best practices and security tool implementation.
+Perform ad hoc tasks as per customer requests.
+Raise change request for customers to implement the recommendations provided by Threat Vulnerability management to improve the Secure Score of the organization.
+What You Will Bring To The Team
 
-
+Minimum 5 Plus years of experience in cyber security incident response Guiding L1 on Incident Management/investigation. 
+Experienced in the below tools & technologies:
+SIEM – Azure Sentinel
+IDS/IPS (Cisco/Sourcefire/Palo)
+EDR (MS Defender)
+Cisco Umbrella & Cisco Firewall
+Proofpoint 
+Vulnerability Assessment (Nessus)
+KQL queries 
+Bachelor’s in engineering, BTech, Master’s in CS.
+Zones offers a comprehensive Benefits package.
 
 
 
