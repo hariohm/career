@@ -341,7 +341,111 @@ Bachelor’s in engineering, BTech, Master’s in CS.
 Zones offers a comprehensive Benefits package.
 
 
+Based on the job descriptions you provided, here's a clear categorization of the skills, tools, and technologies mentioned:
 
+### **SIEM Tools**
+- Splunk
+- Microsoft Sentinel (Azure Sentinel)
+- QRadar
+- ArcSight
+- Cortex XDR
+- GreyMatter (ReliaQuest's platform)
+- Logstash
+- Kibana
+- ELK Stack (Elastic Search)
+- McAfee
+- Proofpoint
+- Security Orchestration, Automation, and Response (SOAR)
+
+### **Threat Hunting**
+- Utilizing MITRE ATT&CK
+- Cyber Kill Chain
+- Diamond Model
+- Proactive threat hunts
+- Threat Intelligence integration
+- Incident response and threat investigation tools
+- Correlation of information from different sources
+- Threat detection methods development
+
+### **Vulnerability Management & Assessment**
+- Nessus
+- Tenable
+- Vulnerability scans and reporting
+- Vulnerability management with asset tracking and remediation
+- Cloud platforms (AWS, Azure) vulnerability handling
+
+### **Endpoint Detection & Response (EDR)**
+- Microsoft Defender
+- CrowdStrike Falcon
+- SentinelOne
+- Zscaler
+- Palo Alto Networks
+- Cisco Meraki
+- Advanced threat detection and XDR tools
+- Endpoint monitoring and configuration
+
+### **Cloud Security**
+- Azure (cloud architecture and security)
+- AWS (cloud security management)
+- GCP (Google Cloud security)
+- CSPM (Cloud Security Posture Management)
+- Experience with cloud incident response
+- Cloud environments support and infrastructure security
+
+### **Operating Systems & Infrastructure**
+- Windows
+- Linux (UNIX, MacOS, knowledge of security tools and monitoring)
+- Basic understanding of networking fundamentals (TCP/IP, DNS, HTTPS)
+- Securing Linux servers (knowledge of scanning and monitoring tools)
+
+### **Scripting & Automation**
+- Python
+- PowerShell
+- Bash
+- Automation in SIEM and SOC operations
+- Scripting for investigation and response automation
+
+### **Incident Response (IR)**
+- Digital Forensics and Malware Analysis
+- Hands-on experience in SOC environments
+- Security incident lifecycle management (Detection, Containment, Eradication, Recovery, Post-Event)
+- Network and system analysis during incidents
+- Incident response in cloud platforms (AWS, Azure)
+- Host-based and network-based intrusion detection systems (IDS/IPS)
+
+### **Security Frameworks & Processes**
+- Understanding of MITRE ATT&CK
+- Cybersecurity standards and practices (confidentiality, integrity, availability)
+- Application security frameworks (SAST/DAST, Burp Suite, OWASP ZAP)
+- Compliance with various IS and cyber security standards
+
+### **Database Technologies**
+- Oracle
+- MSSQL
+- MySQL
+- PostgreSQL
+- IBM Db2
+- MariaDB
+- SAP HANA
+- MongoDB
+
+### **Additional Security Tools & Technologies**
+- Burp Suite (for dynamic testing)
+- OWASP ZAP
+- AppScan, WebInspect, Fortify, Veracode (for SAST/DAST)
+- SkyHigh, Tenable, Zscaler, Palo Alto
+- Active Directory, Entra ID (Identity Services)
+- Encryption methodologies and Public Key Infrastructure (PKI)
+
+### **Certifications & Training**
+- GIAC
+- CEH
+- GCIH
+- CompTIA Security+, CISSP, PentTest+, CND
+- SANS courses and certification
+- Relevant cloud certifications (Azure, AWS)
+
+This breakdown categorizes the major tools, skills, and processes mentioned across the job descriptions you provided. If you need more refined categories or deeper details on specific topics, let me know!
 
 
 
