@@ -1,78 +1,166 @@
-Secure Software Development Lifecycle (SSDLC)
-Software Development Lifecycle (SDLC) describes how software applications are built. It usually contains the following phases:
-Requirements gathering
-Analysis of the requirements to guide design
-Design of new features based on the requirements
-Development of new capabilities (writing code to meet requirements)
-Testing and verification of new capabilities—confirming that they do indeed meet the requirements
-Deployment of the new project
-Agile Development:  advocates for splitting up large monolithic releases into multiple mini-releases, 
-each done in two- or three-week-long sprints, and uses automation to build and verify applications. 
- agile development often focuses on releasing new functionality multiple times a day, building software incrementally instead of all at once.
+**Software Development Lifecycle (SDLC) and Secure Software Development Lifecycle (SSDLC)**
 
-Secure SDLC’s aim is not to completely eliminate traditional security checks, such as penetration tests,
+**Software Development Lifecycle (SDLC)** describes how software applications are built. It usually contains the following phases:
+  - Requirements gathering
+  - Analysis of the requirements to guide design
+  - Design of new features based on the requirements
+  - Development of new capabilities (writing code to meet requirements)
+  - Testing and verification of new capabilities—confirming that they do indeed meet the requirements
+  - Deployment of the new project
+
+**Agile Development** advocates for splitting up large monolithic releases into multiple mini-releases, each done in two- or three-week-long sprints.
+Agile often focuses on releasing new functionality multiple times a day, building software incrementally instead of all at once.
+
+**Secure SDLC** aims not to eliminate traditional security checks, such as penetration tests, 
 but rather to include security in the scope of developer responsibilities and empower them to build secure applications from the outset.
 
+**JWT Authentication Process**
+
+- **Client Login**: The user logs into the system with their credentials (username and password).
+- **Server Issues JWT**: If the login is successful, the server generates a JWT that contains information about the user and returns it to the client.
+- **Client Stores JWT**: The client stores the JWT (usually in the browser’s localStorage or sessionStorage)
+and includes it in the Authorization header of each subsequent API request.
+- **Server Verifies JWT**: When the client sends a request with the token, the server verifies the token’s signature to
+ensure it hasn’t been tampered with and checks the token’s expiration time.
+- **Access Control**: If the token is valid, the server allows access to the requested API endpoint.
+Otherwise, it denies the request (e.g., if the token is expired or invalid).
+
+**GraphQL**
+
+- **Query**: In GraphQL, a query is used to fetch data from the server. It is similar to a GET request in REST APIs. 
+Queries are used for retrieving specific fields and related data from an API in a structured way.
+- **Mutation**: A mutation is used to modify data on the server, such as creating, updating, or deleting data.
+Mutations are similar to the POST, PUT, PATCH, or DELETE requests in REST APIs.
+
+Both **queries** and **mutations** allow clients to request only the specific data they need, improving efficiency and performance.
+
+**API Versioning Best Practices**
+
+- Implement a clear **deprecation policy**. Once a new version is released, inform users of the old version that it will be deprecated after a certain period (e.g., 6-12 months).
+- Provide ample time for migration.
+- Older API versions might remain accessible to ensure backward compatibility, but they can pose security risks if not managed properly.
+A clear versioning and deprecation strategy is crucial to phase out outdated versions.
+
+**Cyber Kill Chain**
+
+- **Reconnaissance**
+- **Weaponization**
+- **Delivery**
+- **Exploitation**
+- **Installation**
+- **Command and Control**
+- **Actions**
+
+**Linux System Scanning Tools**
+
+- **Chkrootkit**: A free and open-source tool used to detect rootkits on Unix-like operating systems.
+- **Lynis**: A comprehensive security auditing tool for Unix-based systems, used to perform in-depth system scans to detect vulnerabilities, misconfigurations, and compliance issues.
+- **OpenSCAP**: A compliance tool that implements the Security Content Automation Protocol (SCAP) for automated configuration and vulnerability management.
+
+---
+
+**Defensive Measures Against IP Rotation**
+
+To prevent attackers from bypassing API rate limiting:
+- **IP Reputation Services**: Identify proxies, Tor nodes, and known bad IP addresses. Block or limit traffic from these addresses.
+- **Behavioral Analytics**: Monitor unusual API usage patterns, such as high-frequency requests, even if IPs are rotating.
+- **CAPTCHA Challenges**: Introduce CAPTCHAs after a certain number of requests to prevent automated abuse.
+- **Device Fingerprinting**: Combine multiple factors (device fingerprinting, user behavior, tokens) to limit requests, instead of relying solely on IP addresses.
+- **Rate Limiting with Token Bucket Algorithms**: Apply rate limits across multiple dimensions (IP, session, API key) and use algorithms like token buckets to reduce abuse.
+- **Rate Limits Based on User Accounts or API Keys**: Apply rate limits tied to specific accounts, regardless of IP address, making it harder for attackers to bypass using IP rotation alone.
+
+**How IP Rotation Can Cause Problems**:
+- Increased Costs (Cloud Resource Exhaustion)
+- API Abuse or Data Theft (Scraping, Credential Stuffing)
+- Denial-of-Service (DoS) Attacks
+- Increased Logging and Monitoring Overhead
+
+**Command Injection**
+
+- This attack differs from **Code Injection**, where the attacker adds their own code that the application executes.
+In **Command Injection**, the attacker extends the default functionality of the application to execute system commands without injecting code.
+
+NTLM (NT LAN Manager) is a suite of Microsoft security protocols intended to provide authentication, integrity, and confidentiality to users.
+NTLM is an older authentication protocol and is still supported for backward compatibility in Windows systems,
+although modern authentication systems (such as Kerberos) are now preferred.
+NTLM hashes still pose significant security risks in modern networks, especially with the prevalence of Pass-the-Hash attacks.
+Therefore, it's recommended to move away from NTLM wherever possible and implement stronger security controls to minimize the exposure of these hashes.
+
+key appsec concepts
+threat modelling exercise
+code review with owasp top 10
+
+potential attack surface for digital assets
+To reduce the attack surface for digital assets, potential strategies include:
+asset discovery and inventory management, network segmentation, strong access controls, regular vulnerability scanning,
+patching systems promptly, minimizing exposed services, implementing a zero-trust security model, data encryption, 
+user education, and utilizing security tools like firewalls and intrusion detection systems;
+
+Yes, in the context of threat modeling, focusing on assets, threat actors, and attack vectors is a simple but effective way
+to frame potential threats to an organization.
+Here's a breakdown of each component:
+Assets
+Definition: Assets are the valuable components of your system or organization that need protection. 
+These can be data, infrastructure, applications, or services.
+Goal in Threat Modeling: Identify and prioritize assets based on their importance to the organization, as the higher the value,
+the more critical it is to protect them.
+
+Threat Actors
+Definition: Threat actors are individuals or groups who pose a potential risk to your assets.
+They can vary in skill, motivation, and resources.
+types of threat actors: external attackers, internal threats, accidental threats, 
+Goal in Threat Modeling: Understand the different types of threat actors who may target your assets, 
+and their likely motives, capabilities, and goals (e.g., financial gain, data theft, disruption).
+
+Attack Vectors
+Definition: Attack vectors are the pathways or methods that threat actors use to compromise an asset.
+These are the points of entry where a system can be exploited.
+examples: network based attacks, social engineering, malware
+Goal in Threat Modeling: Identify all the possible ways a threat actor could exploit vulnerabilities in your system to compromise assets.
 
 
+mitre attack
+reconnaissance, resource development, intial access, execution, persistence , privilege escalation
+defensive evasion, credential access, discovery, lateral movement, collection, command and control, exfiltration, impact.
+"Forwarded events" in Windows event logs refer to events that have been sent from one computer to another using the Windows Event Forwarding feature,
+essentially allowing you to collect logs from multiple machines in a central location for easier monitoring and analysis; these forwarded 
+events are stored in a separate "Forwarded Events" log within the Event Viewer. 
 
+The main difference between a Domain Controller and an Active Directory, is that an Active Directory (AD) manages your identity and
+gives secure access while Domain Controllers verify your authority.
 
+Template engine attacks, particularly Server-Side Template Injection (SSTI), are a serious security threat if not properly mitigated.
+These attacks can lead to Remote Code Execution (RCE), data leakage, or even complete compromise of the server. Proper input validation, 
+template sandboxing, and using secure coding practices are essential to prevent such attacks.
 
+IR -PLAN 
+incident identification, communication, containment, recovery, post-incident attack.
+Windows logs scheduled tasks in the Event Viewer with specific Event IDs.
 
+You can monitor the Task Scheduler logs for information about scheduled tasks:
+Open Event Viewer (eventvwr.msc).
+Navigate to Windows Logs > Microsoft > Windows > TaskScheduler > Operational.
+Common Event IDs for scheduled tasks include:
+Event ID 4698: A scheduled task was created.
+Event ID 4699: A scheduled task was deleted.
+Event ID 4700: A scheduled task was enabled.
+Event ID 4701: A scheduled task was disabled.
+Event ID 200: A task started successfully.
+Event ID 201: A task completed successfully.
+Event ID 101: A task failed to start.
+These Event IDs can help you track task creation, deletion, execution, and errors.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tasks
+C:\Windows\System32\Tasks\
+Summary of Monitoring Cron Jobs (Linux) and Scheduled Tasks (Windows):
+Linux Cron Jobs:
+Use crontab -l for user cron jobs.
+Check /etc/crontab for system-wide cron jobs.
+Monitor logs like /var/log/syslog or /var/log/cron.log.
+Windows Scheduled Tasks:
+Use the Task Scheduler GUI or schtasks command to view tasks.
+Monitor Event Viewer for relevant Event IDs (4698, 4699, 4700, 4701).
+Registry keys: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tasks.
 
 
 
