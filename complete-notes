@@ -163,9 +163,20 @@ Monitor Event Viewer for relevant Event IDs (4698, 4699, 4700, 4701).
 Registry keys: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tasks.
 
 
+APIs are critical to almost all modern applications, so any issues with functionality not meeting users' needs are going to have a major impact on the business and customers.
+Although there are many types of testing that should go on in regard to APIs, API functional testing emerges as one of the most important
+when it comes to guaranteeing that an API is doing what it was designed to do.
+Each microservice exposes a set of endpoints, and the correct functioning of these endpoints is essential for the overall application's stability. 
+Overall, the scope of functional testing for various aspects of the API includes:
+Request methods: Verifying that the API correctly handles different HTTP methods like GET, POST, PUT, DELETE, etc.
 
+Data formats: Ensuring the API accepts and returns data in the expected formats (e.g., JSON, XML).
 
+Error handling: Confirming that the API returns appropriate error codes and messages for invalid requests or unexpected conditions.
 
+Business logic: Validating that the API correctly implements the underlying business rules and processes.
+
+Authentication and authorization: Ensuring that only authorized users can access specific API endpoints and perform certain actions.
 
 
 
